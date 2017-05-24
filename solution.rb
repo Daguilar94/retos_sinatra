@@ -23,6 +23,12 @@ require 'sinatra'
 #end
 
 #RETO 4
+#get '/' do
+#  'HcUy6Re2LLBRtj'
+#end
+
 get '/' do
-  'HcUy6Re2LLBRtj'
+  50.times do |num|
+    num.even? "#{num} Soy Par!" : "#{num} Soy Impar!"
+  end
 end
