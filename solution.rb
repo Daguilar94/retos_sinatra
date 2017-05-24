@@ -27,8 +27,15 @@ require 'sinatra'
 #  'HcUy6Re2LLBRtj'
 #end
 
+#RETO 5
 get '/' do
-  50.times do |num|
-    num.even? "#{num} Soy Par!" : "#{num} Soy Impar!"
-  end
+  erb :index
+#  'Hola hijueputa'
+#  50.times do |num|
+#    if (num+1).even?
+#      "#{num+1} Soy Par!"
+#    else
+#      "#{num+1} Soy Impar!"
+#    end
+#  end
 end

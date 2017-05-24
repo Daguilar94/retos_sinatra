@@ -1,15 +1,18 @@
-<!-- #RETO 1
+
 <html>
-<% @nombre == nil ? %> <%= <h1> "Hola desconocido!"</h1> : <h1>"Hola #{@nombre}"</h1>%>
+<body>
+  <table>
+<%50.times do |num|%>
+  <%if (num+1).even?%>
+  <tr>
+  <td><%="#{num+1} Soy Par!"%></td>
+  </tr>
+  <%else%>
+  <tr>
+  <td><%="#{num+1} Soy Impar! \n"%></td>
+  </tr>
+   <%end%>
+<%end%>
+</table>
+</body>
 </html>
--->
-<!--RETO 3-->
-
-Hola dime a quien saludar
-
-  <form action="/saluda" method="post">
-    <label for="nombre">
-      <input type="text" name="nombre">
-    </label>
-    <input type="submit" name="submit">
-  </form>
