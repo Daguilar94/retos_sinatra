@@ -13,11 +13,16 @@ require 'sinatra'
 
 #RETO3
 
-get '/' do
-erb  :index
-end
+#get '/' do
+#erb  :index
+#end
 
-post '/saluda' do
-@nombre = params[:nombre]
-"¡Hola #{@nombre}!"
+#post '/saluda' do
+#@nombre = params[:nombre]
+#"¡Hola #{@nombre}!"
+#end
+
+#RETO 4
+get '/' do
+  'HcUy6Re2LLBRtj'
 end
