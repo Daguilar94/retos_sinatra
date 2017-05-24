@@ -1,3 +1,9 @@
-<html>
-<% @nombre == nil ? %> <%= <h1> "Hola desconocido!"</h1> : <h1>"Hola #{@nombre}"</h1>%>
-</html>
+
+Hola dime a quien saludar
+
+  <form action="/saluda" method="post">
+    <label for="nombre">
+      <input type="text" name="nombre">
+    </label>
+    <input type="submit" name="submit">
+  </form>
