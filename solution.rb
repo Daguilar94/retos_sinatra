@@ -1,6 +1,6 @@
-request sinatra
+require 'sinatra'
 
 get '/' do
    @nombre = params[:nombre]
-   @nombre == nil ? "Hola desconocido!" : "Hola #{@nombre}"
+   erb :index
 end
