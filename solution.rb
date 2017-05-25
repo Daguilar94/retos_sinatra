@@ -28,14 +28,17 @@ require 'sinatra'
 #end
 
 #RETO 5
+#get '/' do
+#  erb :index
+#end
+
+RETO 6
+suma = 0
 get '/' do
+  @suma = suma
   erb :index
-#  'Hola hijueputa'
-#  50.times do |num|
-#    if (num+1).even?
-#      "#{num+1} Soy Par!"
-#    else
-#      "#{num+1} Soy Impar!"
-#    end
-#  end
+end
+post '/' do
+  suma += 1
+  redirect '/'
 end
