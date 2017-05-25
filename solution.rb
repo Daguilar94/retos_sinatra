@@ -32,7 +32,7 @@ require 'sinatra'
 #  erb :index
 #end
 
-RETO 6
+#RETO 6
 suma = 0
 get '/' do
   @suma = suma
