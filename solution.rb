@@ -56,10 +56,21 @@ require 'sinatra'
 
 #RETO 8
 
-get '/' do
-"#{request.user_agent}"
+#get '/' do
+#"#{request.user_agent}"
 #  puts "url = #{request.url}"
 #  puts "PORT = #{request.port}"
 #  puts "METHOD = #{request.request_method}"
 #  puts "DONT KNOW = #{request.env}"
+#end
+
+#RETO 9
+
+get '/' do
+  puts "ESTE ES: #{env[:permiso]}"
+  if env[:permiso]
+    "Si lo logramos!"
+  else
+    "Sin Permiso"
+  end
 end
