@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/reloader' if development?
 
 #RETO 1
 #get '/' do
@@ -67,10 +68,11 @@ require 'sinatra'
 #RETO 9
 
 get '/' do
-  #puts "ESTE ES: #{env[:permiso]}"
-  if env[:permiso]
+  #puts env
+  if env['HTTP_PERMISO']
     puts "Si lo logramos!"
   else
-    puts"Sin Permiso"
+   puts "Sin Permiso"
   end
 end
+#curl -XGET -H "permiso: soy-un-token-secreto" "http://localhost:4567/"
