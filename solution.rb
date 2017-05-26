@@ -33,12 +33,23 @@ require 'sinatra'
 #end
 
 #RETO 6
-suma = 0
+#suma = 0
+#get '/' do
+#  @suma = suma
+#  erb :index
+#end
+#post '/' do
+#  suma += 1
+#  redirect '/'
+#end
+
+#RETO 7
+
 get '/' do
-  @suma = suma
   erb :index
 end
-post '/' do
-  suma += 1
-  redirect '/'
+
+post '/dilo' do
+  @mensaje = params[:mensaje]
+  erb :msg
 end
