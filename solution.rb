@@ -45,11 +45,21 @@ require 'sinatra'
 
 #RETO 7
 
-get '/' do
-  erb :index
-end
+#get '/' do
+#  erb :index
+#end
 
-post '/dilo' do
-  @mensaje = params[:mensaje]
-  erb :msg
+#post '/dilo' do
+#  @mensaje = params[:mensaje]
+#  erb :msg
+#end
+
+#RETO 8
+
+get '/' do
+"#{request.user_agent}"
+#  puts "url = #{request.url}"
+#  puts "PORT = #{request.port}"
+#  puts "METHOD = #{request.request_method}"
+#  puts "DONT KNOW = #{request.env}"
 end

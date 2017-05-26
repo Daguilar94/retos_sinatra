@@ -1,5 +1,48 @@
+<!--Reto 1
++<html>
+ +<% @nombre == nil ? %> <%= <h1> "Hola desconocido!"</h1> : <h1>"Hola #{@nombre}"</h1>%>
+ +</html>
+
+Reto 3
++
+ +Hola dime a quien saludar
+ +
+ +  <form action="/saluda" method="post">
+ +    <label for="nombre">
+ +      <input type="text" name="nombre">
+ +    </label>
+ +    <input type="submit" name="submit">
+ +  </form>
+
+ Reto 5
+
+ <html>
+-<% @nombre == nil ? %> <%= <h1> "Hola desconocido!"</h1> : <h1>"Hola #{@nombre}"</h1>%>
++<body>
++  <table>
++<%50.times do |num|%>
++  <%if (num+1).even?%>
++  <tr>
++  <td><%="#{num+1} Soy Par!"%></td>
++  </tr>
++  <%else%>
++  <tr>
++  <td><%="#{num+1} Soy Impar! \n"%></td>
++  </tr>
++   <%end%>
++<%end%>
++</table>
++</body>
+
+Reto 6
+<h1> Mi cuenta es : <%= "#{@suma}" %></h1>
+<form action="/" method="post">
+  <input type="submit" value="Suma!!">
+</form>
+
+Reto 7
 
 <form action="/dilo" method="post">
   <input type="text" name="mensaje">
   <input type="submit" name="submit" value="Dilo!">
-</form>
+</form>-->
