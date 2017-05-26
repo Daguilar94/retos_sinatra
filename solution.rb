@@ -67,10 +67,10 @@ require 'sinatra'
 #RETO 9
 
 get '/' do
-  puts "ESTE ES: #{env[:permiso]}"
+  #puts "ESTE ES: #{env[:permiso]}"
   if env[:permiso]
-    "Si lo logramos!"
+    puts "Si lo logramos!"
   else
-    "Sin Permiso"
+    puts"Sin Permiso"
   end
 end
