@@ -70,9 +70,9 @@ require 'sinatra'
 get '/' do
   #puts env
   if env['HTTP_PERMISO']
-    puts "Si lo logramos!"
+    "Si lo logramos!"
   else
-   puts "Sin Permiso"
+   "Sin Permiso"
   end
 end
 #curl -XGET -H "permiso: soy-un-token-secreto" "http://localhost:4567/"
